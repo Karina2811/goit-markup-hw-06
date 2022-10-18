@@ -489,11 +489,11 @@ img{
     color: #FFFFFF;
     margin-bottom: 20px;
 }
-.mailing-list {
+.form-element {
     display: flex;
     justify-content: center;
 }
-input{
+.form-footer input{
     width: 358px;
     height: 50px;
     border: none;
@@ -514,17 +514,20 @@ input{
     margin-bottom: 4px;
 }
 .mailing-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--accent-color);
     color: #FFFFFF;
     width: 200px;
     height: 50px;
-    margin-left: 12px;
-    position: absolute;
+    padding: 0;
+    position: relative;
 }
 .icon-send{
-    position: relative;
-    top: 9px;
-    left: 10px;
+    position: absolute;
+    top: 10px;
+    right: 28px;
 }
 
 
@@ -844,10 +847,9 @@ img {
 }
 
 .modal-form .btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-left: 165px;
-
+   position: absolute;
+   bottom: 30px;
+   left: 164px;
+   transform: translate(-50%, -50%);
+}
 
