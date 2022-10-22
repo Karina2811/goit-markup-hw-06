@@ -168,6 +168,8 @@ header .container{
 .btn{
     border: none;
     outline: none;
+    width: 216px;
+    height: 50px;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.9;
@@ -832,6 +834,13 @@ img {
     display: flex;
     justify-content: center;
 }
+.accept input:focus + label .checkbox{
+    border: 2px solid #212121;
+}
+.accept input:checked:focus +label .checkbox{
+    border: 2px solid var(--accent-color);
+    background: var(--accent-color);
+}
 .visualli-hidden{
     position: absolute;
     white-space: nowrap;
@@ -844,12 +853,21 @@ img {
     clip-path: inset(50%);
     margin: -1px;
 }
+.accept-text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: var(--text-color);
+}
 .terms{
     color: var(--accent-color);
 }
-
 .modal-btn{
 width: 200px;
 height: 50px;
+position: absolute;
+left: 164px;
+bottom: 40px;
 }
 
